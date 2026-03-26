@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backend o'quv yo'li</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar card">
+      <div class="toolbar-brand">
+        <p id="page-label" class="eyebrow">Backend o'quv yo'li</p>
+      </div>
+      <div class="hero-actions">
+        <div class="language-switch" role="group" aria-label="Tilni almashtirish">
+          <button class="locale-button is-active" type="button" data-locale="uz" aria-pressed="true">UZ</button>
+          <button class="locale-button" type="button" data-locale="ru" aria-pressed="false">RU</button>
+        </div>
+        <button id="reset-progress" class="ghost-button" type="button">Progressni tozalash</button>
+      </div>
+    </header>
+
+    <main id="app" class="layout" aria-live="polite">
+      <section class="loading-card card">
+        <p class="eyebrow">Tayyorlanmoqda</p>
+        <h2>Roadmap yuklanmoqda...</h2>
+        <p>Yuklangach, bu yerda bosqichlar, mavzular va brauzerda saqlanadigan progress bilan checkboxlar ko'rinadi.</p>
+      </section>
+    </main>
+  </div>
+
+  <noscript>
+    <div class="page-shell noscript-card">
+      Bu roadmap uchun JavaScript kerak: u `RoadMAP.uz.md` faylini yuklaydi, bosqichlarni quradi va progressni lokal saqlaydi.
+    </div>
+  </noscript>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
