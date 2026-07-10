@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07090a" />
+  <meta name="description" content="Концептуальный фан-сайт на стыке космической оперы и психологического хоррора." />
+  <title>Echoes of the Force — Fan Concept</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="space" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="На главную">
+      <span class="brand-mark">E/F</span>
+      <span class="brand-copy">ECHOES<br>OF THE FORCE</span>
+    </a>
+
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#signal">Сигнал</a>
+      <a href="#paths">Пути</a>
+      <a href="#archive">Архив</a>
+    </nav>
+
+    <button class="sound-toggle" type="button" aria-pressed="false" aria-label="Включить атмосферный звук">
+      <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="sound-label">Звук выкл.</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">ДАЛЬНИЙ РУБЕЖ · СЕКТОР 02</p>
+        <h1 id="hero-title" class="hero-title reveal">
+          <span>THE FORCE</span>
+          <span class="ghost-line">REMEMBERS</span>
+          <span>WHAT YOU BURIED.</span>
+        </h1>
+        <p class="hero-lead reveal">
+          Звёзды погасли не из-за войны. Они погасли, когда ты решил забыть.
+          Войди в туман и найди источник сигнала.
+        </p>
+        <div class="hero-actions reveal">
+          <a class="primary-btn magnetic" href="#signal"><span>Принять сигнал</span></a>
+          <button class="text-btn magnetic" type="button" data-scroll="#archive">Открыть архив <span>↗</span></button>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="moon"></div>
+        <div class="fog fog-a"></div>
+        <div class="fog fog-b"></div>
+        <div class="sentinel">
+          <div class="helmet"></div>
+          <div class="torso"></div>
+          <div class="blade"></div>
+        </div>
+        <div class="hero-caption">UNKNOWN PRESENCE / 03:17:42</div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true">
+        <span>SCROLL TO DESCEND</span>
+        <i></i>
+      </div>
+    </section>
+
+    <section id="signal" class="signal-section section-shell">
+      <div class="section-index">01 / SIGNAL</div>
+      <div class="signal-grid">
+        <div class="radio-card reveal-card">
+          <div class="radio-topline">
+            <span>ПЕРЕХВАЧЕНО</span>
+            <span class="pulse-dot">LIVE</span>
+          </div>
+          <div class="waveform" aria-hidden="true">
+            <span style="--h:18%"></span><span style="--h:55%"></span><span style="--h:28%"></span>
+            <span style="--h:85%"></span><span style="--h:42%"></span><span style="--h:70%"></span>
+            <span style="--h:32%"></span><span style="--h:92%"></span><span style="--h:36%"></span>
+            <span style="--h:61%"></span><span style="--h:22%"></span><span style="--h:78%"></span>
+            <span style="--h:44%"></span><span style="--h:96%"></span><span style="--h:30%"></span>
+            <span style="--h:65%"></span><span style="--h:25%"></span><span style="--h:73%"></span>
+          </div>
+          <p class="transcript">«…не доверяй свету. Здесь он показывает не дорогу, а то, от чего ты бежишь…»</p>
+          <div class="radio-meta"><span>CH. 113.8</span><span>ORIGIN: UNKNOWN</span></div>
+        </div>
+
+        <div class="signal-copy">
+          <p class="eyebrow reveal">ПСИХОАКУСТИЧЕСКАЯ АНОМАЛИЯ</p>
+          <h2 class="section-title reveal">Туман повторяет<br>твои ошибки.</h2>
+          <p class="body-copy reveal">
+            Сигнал проходит сквозь старые военные частоты и появляется только рядом с заброшенными станциями.
+            Каждый слушатель слышит в нём разные слова — но всегда узнаёт голос.
+          </p>
+          <dl class="metrics reveal">
+            <div><dt>14</dt><dd>пропавших экипажей</dd></div>
+            <div><dt>03:17</dt><dd>время повторения</dd></div>
+            <div><dt>∞</dt><dd>попыток выйти</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="paths" class="paths-section section-shell">
+      <div class="section-heading reveal">
+        <div>
+          <div class="section-index">02 / PATHS</div>
+          <h2 class="section-title">Выбери, что<br>останется с тобой.</h2>
+        </div>
+        <p>Три маршрута ведут к источнику. Ни один не ведёт обратно тем же человеком.</p>
+      </div>
+
+      <div class="path-grid">
+        <article class="path-card tilt-card reveal-card" data-path="I">
+          <div class="path-number">I</div>
+          <div class="path-image path-image-one"><span class="orb"></span></div>
+          <div class="path-content">
+            <p>ORBITAL RELIC</p>
+            <h3>Храм без звёзд</h3>
+            <span>Тишина здесь звучит как дыхание.</span>
+          </div>
+        </article>
+
+        <article class="path-card tilt-card reveal-card" data-path="II">
+          <div class="path-number">II</div>
+          <div class="path-image path-image-two"><span class="door"></span></div>
+          <div class="path-content">
+            <p>FOG DISTRICT</p>
+            <h3>Город на радаре</h3>
+            <span>Улицы меняются, когда ты отводишь взгляд.</span>
+          </div>
+        </article>
+
+        <article class="path-card tilt-card reveal-card" data-path="III">
+          <div class="path-number">III</div>
+          <div class="path-image path-image-three"><span class="red-sun"></span></div>
+          <div class="path-content">
+            <p>LAST TRANSMISSION</p>
+            <h3>Красная комната</h3>
+            <span>Источник сигнала ждёт за этой дверью.</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-section section-shell">
+      <blockquote class="reveal">«Страх — не тёмная сторона. Страх — это дверь, которую ты сам оставил открытой.»</blockquote>
+      <p>ARCHIVE NOTE / AUTHOR ERASED</p>
+    </section>
+
+    <section id="archive" class="archive-section section-shell">
+      <div class="archive-intro reveal">
+        <div class="section-index">03 / ARCHIVE</div>
+        <h2 class="section-title">Материалы,<br>которых не было.</h2>
+      </div>
+
+      <div class="archive-list">
+        <button class="archive-row reveal-card" type="button" data-detail="ЗАПИСЬ 07: На стене появился след плазменного клинка. Сплав не повреждён. Температура в коридоре упала на 18 градусов.">
+          <span>001</span><strong>След без ожога</strong><em>FIELD LOG</em><i>+</i>
+        </button>
+        <button class="archive-row reveal-card" type="button" data-detail="ЗАПИСЬ 11: Камера наблюдения показывает пустой ангар. Экипаж утверждает, что на записи слышны шаги их погибшего командира.">
+          <span>002</span><strong>Пустой ангар</strong><em>SECURITY FEED</em><i>+</i>
+        </button>
+        <button class="archive-row reveal-card" type="button" data-detail="ЗАПИСЬ 18: Карта сектора каждый раз добавляет новый коридор. Все новые маршруты приводят к одной и той же двери.">
+          <span>003</span><strong>Карта, которая помнит</strong><em>NAV DATA</em><i>+</i>
+        </button>
+      </div>
+      <div class="archive-detail" aria-live="polite">Выберите запись, чтобы расшифровать фрагмент.</div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <div class="footer-mark">ECHOES / FORCE</div>
+    <p>Неофициальный концепт-сайт. Оригинальная история и визуальный дизайн.</p>
+    <a href="#top">К НАЧАЛУ ↑</a>
+  </footer>
+
+  <audio id="ambient" loop preload="none">
+    <source src="" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
